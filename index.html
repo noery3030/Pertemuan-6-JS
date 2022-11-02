@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Mandiri - 6</title>
+    <style>
+        .main{
+            background-color: cornsilk;
+            width: 500px;
+            height: 375px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        input{
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid aliceblue;
+        }
+
+        .select{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        select{
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        .btn{
+            margin-top: 45px;
+            width: 100px;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid rgb(138, 146, 153);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+            <h1>Kalkulator Sederhana</h1>
+        <div class="input">
+            <form action="">
+                <input type="number" placeholder="Masukan Angka Pertama" id="angka1">
+                <input type="number" placeholder="Masukan Angka Kedua" id="angka2">
+            </form>
+            
+        </div>
+        <div class="select">
+            <h3 style="text-align: center ;" >Metode</h3>
+            <select name="Metode" id="metode">
+                <option value=""></option>
+                <option value="penjumlahan" id="tambah">Penjumlahan</option>
+                <option value="pengurangan" id="kurang">Pengurangan</option>
+                <option value="pembagian" id="bagi">Pembagian</option>
+                <option value="perkalian" id="kali">Perkalian</option>
+            </select>
+        </div> 
+        <button class="btn" id="btn" type="button" onclick="option()">Hitung</button> 
+        <h1 id="hasil"></h1>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
